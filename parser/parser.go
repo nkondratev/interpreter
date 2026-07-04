@@ -15,8 +15,8 @@ type Parser struct {
 
 func New(l *lexer.Lexer) *Parser {
 	p := &Parser{l: l}
-	p.l.NextToken()
-	p.l.NextToken()
+	p.nextToken()
+	p.nextToken()
 
 	return p
 }
